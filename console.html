@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console Output</title>
+    <style>
+        #output {
+            white-space: pre-wrap;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            height: 500px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Console Output</h1>
+    <pre id="output"></pre>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = localStorage.getItem('output');
+            document.getElementById('output').textContent = output;
+        });
+    </script>
+</body>
+</html>
